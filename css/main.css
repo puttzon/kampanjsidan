@@ -111,14 +111,10 @@ body, html {
   margin-bottom: .5em;
 }
 
-/* FOOTER */
-
 footer{
   background: rgba(149, 145, 196, 0.44);
   color: white;
-  padding: .5em;
-  font-size: 1em;
-  
+  padding: 2em;
 }
 
 footer ul{

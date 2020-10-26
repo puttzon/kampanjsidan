@@ -1,25 +1,28 @@
 <?php wp_footer(); ?>
 
-<footer>
-  <div class="container-80">
-    <div class="grid">
-      <ul>
-        <li>Adress</li>
-        <li>Postnummer</li>
-        <li>Stad</li>
-      </ul>
-      <ul>
-        <li>Mail</li>
-        <li>Telefon</li>
-      </ul>
-      <ul>
-        <li> <a href="#">Link 1</a></li>
-        <li> <a href="#">Link 2</a></li>
-        <li> <a href="#">Link 3</a></li>
-      </ul>
+<?php
+while (have_rows('block_7')) {
+  the_row();
+?>
+
+  <footer>
+    <div class="container-80">
+      <div class="grid">
+        <ul>
+          <h3><?php the_sub_field('namn'); ?></h3>
+          <li><?php the_sub_field('adress'); ?></li>
+          <li><?php the_sub_field('postnummer'); ?></li>
+          <li><?php the_sub_field('stad'); ?></li>
+        </ul>
+        <ul>
+          <li><?php the_sub_field('mail'); ?></li>
+          <li><?php the_sub_field('telefonnummer'); ?></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+<?php } ?>
 
 </body>
 

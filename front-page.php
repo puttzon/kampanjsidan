@@ -16,66 +16,108 @@ if (have_posts()) {
 <?php } ?>
 
 <main>
-  <div class="container-50">
-    <h1>Lorem</h1>
-    <img src="<?php echo get_template_directory_uri(); ?>/img/img1.jpg" alt="" width="100%">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus neque culpa corporis alias, minima accusantium consequatur eligendi magnam excepturi omnis architecto quidem animi quos ipsa perferendis ex maxime. Fugiat illo velit optio laudantium alias, molestiae perferendis vitae voluptatum dolorem, perspiciatis vel repellendus, commodi labore nisi voluptatibus qui ipsum tempora! Ut consectetur tenetur dolorem quis quo quaerat esse, facilis commodi, aperiam harum accusantium officia nam, error optio possimus consequatur odio cum! Perferendis cupiditate beatae alias. Quasi fuga cumque alias inventore temporibus accusantium laudantium dolore totam consectetur nesciunt recusandae est, id itaque explicabo dignissimos? Nisi laborum ipsam minima corporis debitis tempora?</p>
+  <!-- BLOCK 2 -->
+  <?php
+  while (have_rows('block_2')) {
+    the_row();
+  ?>
 
-    <ul>
-      <li>Lorem, ipsum dolor.</li>
-      <li>Lorem, ipsum.</li>
-      <li>Lorem ipsum dolor sit.</li>
-    </ul>
+    <div class="container-50">
+      <h1> <?php the_sub_field('rubrik'); ?> </h1>
 
-    <a href="#">Lorem</a>
+      <img src="<?php echo get_sub_field('bild')['url']; ?>" alt="" width="100%">
 
-  </div>
-  <!-- SECTION A -->
-  <section class="section-a">
-    <div class="section-text">
-      <h2>Lorem, ipsum.</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo amet voluptate id culpa aspernatur molestiae delectus! Magni ex mollitia animi labore, est, tempore explicabo voluptas maiores illum vero, iure reprehenderit aut. Minima tempora, ut dolore, tenetur a distinctio eaque suscipit rerum facilis nihil iste dolorem doloremque ea nobis accusamus sapiente obcaecati nam laborum amet voluptas fugiat velit quia. Repellendus, et?</p>
+      <p><?php the_sub_field('text'); ?></p>
+
+      <ul>
+        <li><?php the_sub_field('list_text1'); ?></li>
+        <li><?php the_sub_field('list_text_2'); ?></li>
+        <li><?php the_sub_field('list_text_3'); ?></li>
+      </ul>
+
+      <a href="#"><?php the_sub_field('knapp_text'); ?></a>
+
     </div>
-  </section>
+  <?php } ?>
+
+
+  <!-- SECTION A -->
+  <?php
+  while (have_rows('block_3')) {
+    the_row();
+  ?>
+    <section class="section-a">
+      <div class="section-text">
+        <h2><?php the_sub_field('rubrik'); ?></h2>
+        <p><?php the_sub_field('text'); ?></p>
+      </div>
+    </section>
+  <?php } ?>
+
 
   <!-- GRID -->
-  <div class="container-80">
-    <div class="grid">
-      <div class="grid-item"> <img src="<?php echo get_template_directory_uri(); ?>/img/img1.jpg" alt="" width="100%"></div>
-      <div class="grid-item"> <img src="<?php echo get_template_directory_uri(); ?>/img/img4.jpg" alt="" width="100%"></div>
-      <div class="grid-item"> <img src="<?php echo get_template_directory_uri(); ?>/img/img5.jpg" alt="" width="100%"></div>
-    </div>
-  </div>
+  <?php
+  while (have_rows('block_4')) {
+    the_row();
+  ?>
 
-  <section class="section-b">
-    <div class="container-40">
-      <h2>Lorem ipsum dolor sit.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus in ad maxime earum. Incidunt rerum dolorum inventore velit reiciendis beatae officiis hic laboriosam adipisci mollitia?</p>
-      <h2>Lorem ipsum dolor sit.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus in ad maxime earum. Incidunt rerum dolorum inventore velit reiciendis beatae officiis hic laboriosam adipisci mollitia?</p>
-      <h2>Lorem ipsum dolor sit.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus in ad maxime earum. Incidunt rerum dolorum inventore velit reiciendis beatae officiis hic laboriosam adipisci mollitia?</p>
-    </div>
-  </section>
-
-  <section class="section-c">
     <div class="container-80">
       <div class="grid">
-        <article>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
-          <small>- Jon Doe</small>
-        </article>
-        <article>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
-          <small>- Jon Doe</small>
-        </article>
-        <article>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
-          <small>- Jon Doe</small>
-        </article>
+        <div class="grid-item"> <img src="<?php echo get_sub_field('bild_1')['url']; ?>" alt="" width="100%"></div>
+        <div class="grid-item"> <img src="<?php echo get_sub_field('bild_2')['url']; ?>" alt="" width="100%"></div>
+        <div class="grid-item"> <img src="<?php echo get_sub_field('bild_3')['url']; ?>" alt="" width="100%"></div>
       </div>
     </div>
-  </section>
+  <?php } ?>
+
+
+  <!-- Block 4 -->
+  <?php
+  while (have_rows('block_5')) {
+    the_row();
+  ?>
+
+
+    <section class="section-b">
+      <div class="container-40">
+        <h2><?php the_sub_field('rubrik_1'); ?></h2>
+        <p><?php the_sub_field('text_1'); ?></p>
+        <h2><?php the_sub_field('rubrik_2'); ?></h2>
+        <p><?php the_sub_field('text_2'); ?></p>
+        <h2><?php the_sub_field('rubrik_3'); ?></h2>
+        <p><?php the_sub_field('text_3'); ?></p>
+      </div>
+    </section>
+  <?php } ?>
+
+
+  <!-- Block 6 -->
+  <?php
+  while (have_rows('block_6')) {
+    the_row();
+  ?>
+
+    <section class="section-c">
+      <div class="container-80">
+        <div class="grid">
+          <article>
+            <p>" <?php the_sub_field('citat_1'); ?> "</p>
+            <small>- <?php the_sub_field('namn_1'); ?></small>
+          </article>
+          <article>
+            <p>" <?php the_sub_field('citat_2'); ?> "</p>
+            <small>- <?php the_sub_field('namn_2'); ?></small>
+          </article>
+          <article>
+            <p>" <?php the_sub_field('citat_3'); ?> "</p>
+            <small>- <?php the_sub_field('namn_3'); ?></small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  <?php } ?>
+
 </main>
 
 <?php
