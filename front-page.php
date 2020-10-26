@@ -59,7 +59,22 @@ if (have_posts()) {
   </section>
 
   <section class="section-c">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias aut dolores vitae obcaecati cum qui itaque at voluptatum et. Architecto recusandae aliquid reiciendis! Esse accusantium enim exercitationem distinctio ad.</p>
+    <div class="container-80">
+      <div class="grid">
+        <article>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
+          <small>- Jon Doe</small>
+        </article>
+        <article>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
+          <small>- Jon Doe</small>
+        </article>
+        <article>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a perspiciatis officiis ex asperiores nihil, perferendis alias in enim id exercitationem dolorum, dignissimos tempore modi placeat eius accusamus eligendi quam?</p>
+          <small>- Jon Doe</small>
+        </article>
+      </div>
+    </div>
   </section>
 </main>
 
