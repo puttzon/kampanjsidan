@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* ölkasd */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+#hero{
+  background: rgba(149, 145, 196, 0.44);;
+  height: 40vh;
+  text-align: center;
+}
+
+#hero h1{
+  font-size: 5em;
+  color: white;
+  padding-top: 1em;
+}
+
+#hero p{
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+.container-50{
+  width: 50%;
+  margin: 2em auto;
+}
+
+.container-50 h1{
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.container-50 p{
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+.container-50 ul{
+  margin-top: 1em;
+  margin-left: 3em;
+  margin-bottom: 3em;
+}
+
+.container-50 a{
+  background: rgba(149, 145, 196, 0.77);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: .7em 1.4em;
+  margin-left: 3em;
+}
+
+/* SECTION-A */
+
+.section-a{
+  background: rgba(149, 145, 196, 0.44);
+  text-align: center;
+  color: white;
+  padding: 5em;
+}
+
+.section-text{
+  width: 800px;
+  margin: auto;
+}
+
+.section-a p{
+  font-size: 1.2em;
+}
+
+/* GRID*/
+
+.container-80{
+  width: 80%;
+  margin: 4em auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1em;
+  margin: auto;
+}
+
+/* CONTAINER-40/SECTION-B*/
+.section-b{
+  background: rgba(149, 145, 196, 0.44);
+  color: white;
+  padding: 5em;
+}
+
+.container-40{
+  width: 40%;
+  margin: auto;
+}
+
+.container-40 p{
+  font-size: 1.1em;
+  margin-bottom: .5em;
+}
