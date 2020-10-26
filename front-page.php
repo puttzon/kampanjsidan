@@ -66,6 +66,7 @@ if (have_posts()) {
         <div class="grid-item"> <img src="<?php echo get_sub_field('bild_1')['url']; ?>" alt="" width="100%"></div>
         <div class="grid-item"> <img src="<?php echo get_sub_field('bild_2')['url']; ?>" alt="" width="100%"></div>
         <div class="grid-item"> <img src="<?php echo get_sub_field('bild_3')['url']; ?>" alt="" width="100%"></div>
+        <div class="grid-item"> <img src="<?php echo get_sub_field('bild_4')['url']; ?>" alt="" width="100%"></div>
       </div>
     </div>
   <?php } ?>
@@ -79,7 +80,7 @@ if (have_posts()) {
 
 
     <section class="section-b">
-      <div class="container-40">
+      <div class="container-50">
         <h2><?php the_sub_field('rubrik_1'); ?></h2>
         <p><?php the_sub_field('text_1'); ?></p>
         <h2><?php the_sub_field('rubrik_2'); ?></h2>

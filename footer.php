@@ -7,7 +7,7 @@ while (have_rows('block_7')) {
 
   <footer>
     <div class="container-80">
-      <div class="grid">
+      <div class="grid2">
         <ul>
           <h3><?php the_sub_field('namn'); ?></h3>
           <li><?php the_sub_field('adress'); ?></li>
